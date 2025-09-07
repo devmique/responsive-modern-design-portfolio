@@ -9,7 +9,7 @@ import s7 from "@/assets/next.png";
 import s8 from "@/assets/nodejs.jpg";
 import s9 from "@/assets/express.jpg";
 import s10 from "@/assets/mysql.jpg";
-import s11 from "@/assets/postgre.png";
+import s11 from "@/assets/mongo.png";
 import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-2.jpg";
 import p2 from "@/assets/project-3.jpg";
@@ -103,10 +103,21 @@ export default function Index() {
             <img src={s8} alt="node" />
             <img src={s9} alt="express" />
             <img src={s10} alt="mysql" />
-            <img src={s11} alt="postgre" />
+            <img src={s11} alt="mongodb" />
+            <img src={s1} alt="html" />
+            <img src={s2} alt="css" />
+            <img src={s3} alt="js" />
+            <img src={s4} alt="tailwind" />
+            <img src={s5} alt="react" />
+            <img src={s6} alt="ts" />
+            <img src={s7} alt="next" />
+            <img src={s8} alt="node" />
+            <img src={s9} alt="express" />
+            <img src={s10} alt="mysql" />
+            <img src={s11} alt="mongodb" />
           </div>
         </div>
-            <p className="mt-4 text-xl">
+            <p className="mt-8 text-xl">
               <span className="text-muted-foreground">I'm a </span>
               <span className="font-medium text-primary">
                 <Typewriter words={["UI/UX Designer","Full-Stack Developer","React Developer"]} />

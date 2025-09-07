@@ -185,7 +185,7 @@ export default function Index() {
             <Textarea id="message" name="message" placeholder="Tell me about your project..." rows={5} required />
           </div>
           <Button type="submit" disabled={sending}>Send</Button>
-          <p className="text-xs text-muted-foreground">Direct send coming soon — provide your email to wire up serverless mail.</p>
+          
         </form>
       </Section>
 

@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  
 }
 
 .logo {
@@ -42,9 +43,12 @@
 }
 
 .skills-wrapper {
+  position: absolute;
   overflow: hidden;         
   display: inline-block;  
   width: 40%;   
+  
+
 }
 
 .skills {

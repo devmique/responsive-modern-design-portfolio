@@ -14,7 +14,7 @@ import s12 from "@/assets/git.png";
 import s13 from "@/assets/github.png";
 import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-2.jpg";
-import p2 from "@/assets/project-3.jpg";
+import p2 from "@/assets/project-4.jpg";
 import c1 from "@/assets/cert1.jpg";
 import c2 from "@/assets/cert2.jpg";
 import c3 from "@/assets/cert3.jpg";
@@ -146,7 +146,7 @@ export default function Index() {
           <p className="text-muted-foreground mt-2">Selected case studies and experiments.</p>
         </header>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL"},{img:p2,title:"SaaS Ticket Marketplace", desc: "Tech stack: Next.js, Shadcn UI, Convex, Stripe"},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn/ui, Google Gemini, Zod"}].map((p, i) => (
+          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL"},{img:p2,title:"Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB"},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn/ui, Google Gemini, Zod"}].map((p, i) => (
             <Card key={i} className="overflow-hidden transition-transform hover:scale-[1.02]">
               <CardContent className="p-0">
                 <img src={p.img} alt={`${p.title} preview`} loading="lazy" className="w-full h-48 object-cover" />

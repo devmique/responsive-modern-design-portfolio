@@ -126,7 +126,7 @@ export default function Index() {
             <p className="mt-8 text-xl">
               <span className="text-muted-foreground">I'm a </span>
               <span className="font-medium text-primary">
-                <Typewriter words={[MERN Stack Developer","Full-Stack Developer","React Developer"]} />
+                <Typewriter words={["MERN Stack Developer","Full-Stack Developer","React Developer"]} />
               </span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">

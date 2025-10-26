@@ -35,7 +35,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useInView } from "@/hooks/use-in-view";
 import { Typewriter } from "@/components/Typewriter";
-import { Mail } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import "@/App.css";
@@ -132,8 +132,8 @@ export default function Index() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#projects"><Button>View Projects</Button></a>
               <a href="#contact"><Button variant="outline"><Mail className="h-4 w-4 mr-2"/>Contact</Button></a>
-               <a href="https://github.com/devmique"><Button><i className="fa-brands fa-github"></i>Github</Button></a>
-              <a href="https://www.linkedin.com/in/johnlord-mique-40b5a1342/"><Button variant="outline"><i className="fa-brands fa-linkedin"></i>LinkedIn</Button></a>
+               <a href="https://github.com/devmique"><Button><Github/>Github</Button></a>
+              <a href="https://www.linkedin.com/in/johnlord-mique-40b5a1342/"><Button variant="outline"><Linkedin />LinkedIn</Button></a>
             </div>
           </div>
 

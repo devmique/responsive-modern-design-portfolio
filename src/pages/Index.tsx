@@ -9,10 +9,12 @@ import s7 from "@/assets/next.png";
 import s8 from "@/assets/nodejs.jpg";
 import s9 from "@/assets/express.jpg";
 import s10 from "@/assets/mysql.jpg";
-import s11 from "@/assets/postgre.png";
+import s11 from "@/assets/mongo.png";
+import s12 from "@/assets/git.png";
+import s13 from "@/assets/github.png";
 import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-2.jpg";
-import p2 from "@/assets/project-3.jpg";
+import p2 from "@/assets/project-4.jpg";
 import c1 from "@/assets/cert1.jpg";
 import c2 from "@/assets/cert2.jpg";
 import c3 from "@/assets/cert3.jpg";
@@ -103,18 +105,35 @@ export default function Index() {
             <img src={s8} alt="node" />
             <img src={s9} alt="express" />
             <img src={s10} alt="mysql" />
-            <img src={s11} alt="postgre" />
-          </div>
+            <img src={s11} alt="mongodb" />
+              <img src={s12} alt="git" />  
+            <img src={s13} alt="gt" />        
+              <img src={s1} alt="html" />
+            <img src={s2} alt="css" />
+            <img src={s3} alt="js" />
+            <img src={s4} alt="tailwind" />
+            <img src={s5} alt="react" />
+            <img src={s6} alt="ts" />
+            <img src={s7} alt="next" />
+            <img src={s8} alt="node" />
+            <img src={s9} alt="express" />
+            <img src={s10} alt="mysql" />
+            <img src={s11} alt="mongodb" />
+            <img src={s12} alt="git" />  
+            <img src={s13} alt="gt" />           
+            </div>
         </div>
-            <p className="mt-4 text-xl">
+            <p className="mt-8 text-xl">
               <span className="text-muted-foreground">I'm a </span>
               <span className="font-medium text-primary">
-                <Typewriter words={["UI/UX Designer","Full-Stack Developer","React Developer"]} />
+                <Typewriter words={["MERN Stack Developer","Full-Stack Developer","React Developer"]} />
               </span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#projects"><Button>View Projects</Button></a>
               <a href="#contact"><Button variant="outline"><Mail className="h-4 w-4 mr-2"/>Contact</Button></a>
+               <a href="https://github.com/devmique"><Button><i className="fa-brands fa-github"></i>Github</Button></a>
+              <a href="https://www.linkedin.com/in/johnlord-mique-40b5a1342/"><Button variant="outline"><i className="fa-brands fa-linkedin"></i>LinkedIn</Button></a>
             </div>
           </div>
 
@@ -129,7 +148,9 @@ export default function Index() {
           <p className="text-muted-foreground mt-2">Selected case studies and experiments.</p>
         </header>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL"},{img:p2,title:"SaaS Ticket Marketplace", desc: "Tech stack: Next.js, Shadcn UI, Convex, Stripe"},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn/ui, Google Gemini, Zod"}].map((p, i) => (
+
+          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL"},{img:p2,title:" Student Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB"},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn-UI, Google Gemini, Zod"}].map((p, i) => (
+
             <Card key={i} className="overflow-hidden transition-transform hover:scale-[1.02]">
               <CardContent className="p-0">
                 <img src={p.img} alt={`${p.title} preview`} loading="lazy" className="w-full h-48 object-cover" />
@@ -151,7 +172,7 @@ export default function Index() {
         </header>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center cursor-pointer">
           {[c2,c3,c4, c5, c6, c7, c8, c9, c10, c12,c13, c14, c11, c1].map((src, i) => (
-            <div key={i} className="flex items-center justify-center rounded-xl border-2 border-gray-100 hover:border-gray-800 bg-card p-1 animate-fade-in">
+            <div key={i} className="flex items-center justify-center rounded-xl border-2 border-gray-100 hover:border-gray-800 bg-card p-1 animate-fade-in dark:border-gray-800 dark:hover:border-gray-100">
               <img src={src} alt={`Certification badge ${i+1}`} className="h-21 w-21 " loading="lazy" />
             </div>
           ))}
@@ -174,8 +195,7 @@ export default function Index() {
             <Textarea id="message" name="message" placeholder="Tell me about your project..." rows={5} required />
           </div>
           <Button type="submit" disabled={sending}>Send</Button>
-          <p className="text-xs text-muted-foreground">Direct send coming soon — provide your email to wire up serverless mail.</p>
-        </form>
+       <p className="text-xs text-muted-foreground">serverless mail.</p>     </form>
       </Section>
 
       <footer className="border-t">

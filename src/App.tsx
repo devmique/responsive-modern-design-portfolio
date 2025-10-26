@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { Navbar } from "./components/Navbar";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 const queryClient = new QueryClient();
 
 const App = () => (

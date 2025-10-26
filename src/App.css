@@ -42,6 +42,7 @@
 }
 
 .skills-wrapper {
+  position: absolute;
   overflow: hidden;         
   display: inline-block;  
   width: 40%;   

@@ -88,7 +88,7 @@ export default function Index() {
              Hi, I'm Johnlord Mique
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-            I build efficient and scalable software solutions. I specialize in problem-solving, designing,
+            Information Technology Undergraduate and I build efficient software solutions. I specialize in problem-solving, designing,
              and crafting applications that blend performance with great user experience.</p>
             <br></br>
             <div className="skills-wrapper">

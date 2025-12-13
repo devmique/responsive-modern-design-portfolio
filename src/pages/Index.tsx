@@ -35,7 +35,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useInView } from "@/hooks/use-in-view";
 import { Typewriter } from "@/components/Typewriter";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, SquareArrowOutUpRightIcon } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import "@/App.css";
@@ -149,7 +149,7 @@ export default function Index() {
         </header>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL"},{img:p2,title:" Student Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB"},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn-UI, Google Gemini, Zod"}].map((p, i) => (
+          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL", glink:"https://github.com/devmique/full-stack-parents-portal", llink:""},{img:p2,title:" Student Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB", glink:"https://github.com/devmique/student_violation_tracking_system", llink:""},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn-UI, Google Gemini, Zod", glink:"https://github.com/devmique/ai-mock-interview", llink:"https://ai-mock-interview-chi-nine.vercel.app"}].map((p, i) => (
 
             <Card key={i} className="overflow-hidden transition-transform hover:scale-[1.02]">
               <CardContent className="p-0">
@@ -157,6 +157,11 @@ export default function Index() {
                 <div className="p-4">
                   <h3 className="font-medium">{p.title}</h3>
                   <p className="text-sm text-muted-foreground mt-1">{p.desc}</p>
+                  <br></br>
+                  <div className="flex justify-center items-center gap-2">
+                  <a href={p.glink}><Button variant="outline" className="text-muted-foreground"><Github/>Github Repo</Button></a>
+                  {p.llink && <a href={p.llink}><Button variant="outline" className="text-muted-foreground"><SquareArrowOutUpRightIcon/>Live Demo</Button></a> }
+                </div>                
                 </div>
               </CardContent>
             </Card>

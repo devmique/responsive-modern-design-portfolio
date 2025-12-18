@@ -15,6 +15,7 @@ import s13 from "@/assets/github.png";
 import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-2.jpg";
 import p2 from "@/assets/project-4.jpg";
+import p4 from "@/assets/project-5.jpg";
 import c1 from "@/assets/cert1.jpg";
 import c2 from "@/assets/cert2.jpg";
 import c3 from "@/assets/cert3.jpg";
@@ -149,7 +150,7 @@ export default function Index() {
         </header>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL", glink:"https://github.com/devmique/full-stack-parents-portal", llink:""},{img:p2,title:" Student Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB", glink:"https://github.com/devmique/student_violation_tracking_system", llink:""},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn-UI, Google Gemini, Zod", glink:"https://github.com/devmique/ai-mock-interview", llink:"https://ai-mock-interview-chi-nine.vercel.app"}].map((p, i) => (
+          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL", glink:"https://github.com/devmique/full-stack-parents-portal", llink:""},{img:p2,title:" Student Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB", glink:"https://github.com/devmique/student_violation_tracking_system", llink:""},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn-UI, Google Gemini, Zod", glink:"https://github.com/devmique/ai-mock-interview", llink:"https://ai-mock-interview-chi-nine.vercel.app"},{img:p4,title:"SaaS Workspace Dashboard", desc: "Tech stack: Next.js, TailwindCSS, Supabase, Shadcn-UI, Recharts", glink:"https://github.com/devmique/saas-workspace-dashboard/", llink:"https://saas-workspace-dashboard.vercel.app/"}].map((p, i) => (
 
             <Card key={i} className="overflow-hidden transition-transform hover:scale-[1.02]">
               <CardContent className="p-0">

@@ -30,13 +30,14 @@ import c11 from "@/assets/cert11.jpg";
 import c12 from "@/assets/cert12.png";
 import c13 from "@/assets/cert13.png";
 import c14 from "@/assets/cert14.png";
+import resume from "@/assets/resume.pdf"
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useInView } from "@/hooks/use-in-view";
 import { Typewriter } from "@/components/Typewriter";
-import { Mail, Linkedin, Github, SquareArrowOutUpRightIcon } from "lucide-react";
+import { Mail, Linkedin, Github, SquareArrowOutUpRightIcon, Download } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import "@/App.css";
@@ -107,9 +108,9 @@ export default function Index() {
             <img src={s9} alt="express" />
             <img src={s10} alt="mysql" />
             <img src={s11} alt="mongodb" />
-              <img src={s12} alt="git" />  
+            <img src={s12} alt="git" />  
             <img src={s13} alt="gt" />        
-              <img src={s1} alt="html" />
+            <img src={s1} alt="html" />
             <img src={s2} alt="css" />
             <img src={s3} alt="js" />
             <img src={s4} alt="tailwind" />
@@ -132,7 +133,7 @@ export default function Index() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#projects"><Button>View Projects</Button></a>
-              <a href="#contact"><Button variant="outline"><Mail className="h-4 w-4 mr-2"/>Contact</Button></a>
+              <a href={resume} download="johnlord_mique_resume.pdf"><Button variant="outline"><Download className="h-4 w-4 mr-2"/>Download CV</Button></a>
                <a href="https://github.com/devmique"><Button><Github/>Github</Button></a>
               <a href="https://www.linkedin.com/in/johnlord-mique-40b5a1342/"><Button variant="outline"><Linkedin />LinkedIn</Button></a>
             </div>

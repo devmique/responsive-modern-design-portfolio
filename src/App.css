@@ -65,3 +65,6 @@
     transform: translateX(-50%); 
   }
 }
+.skills:hover {
+        animation-play-state: paused;
+        }

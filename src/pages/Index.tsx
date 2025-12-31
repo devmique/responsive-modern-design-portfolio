@@ -67,7 +67,22 @@ export default function Index() {
     window.location.href = `mailto:miquejt13@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => setSending(false), 800);
   };
-
+  const skills = [
+  { src: s1, alt: "html" },
+  { src: s2, alt: "css" },
+  { src: s3, alt: "js" },
+  { src: s4, alt: "tailwind" },
+  { src: s5, alt: "react" },
+  { src: s6, alt: "ts" },
+  { src: s7, alt: "next" },
+  { src: s8, alt: "node" },
+  { src: s9, alt: "express" },
+  { src: s10, alt: "mysql" },
+  { src: s11, alt: "mongodb" },
+  { src: s12, alt: "git" },
+  { src: s13, alt: "gt" },
+];
+const duplicatedSkills = [...skills, ...skills];
   return (
     <main>
       {/* Hero / About */}
@@ -94,37 +109,12 @@ export default function Index() {
              and crafting applications that blend performance with great user experience.</p>
             <br></br>
             <div className="skills-wrapper">
-            
-            <div className="skills">
-        
-            <img src={s1} alt="html" />
-            <img src={s2} alt="css" />
-            <img src={s3} alt="js" />
-            <img src={s4} alt="tailwind" />
-            <img src={s5} alt="react" />
-            <img src={s6} alt="ts" />
-            <img src={s7} alt="next" />
-            <img src={s8} alt="node" />
-            <img src={s9} alt="express" />
-            <img src={s10} alt="mysql" />
-            <img src={s11} alt="mongodb" />
-            <img src={s12} alt="git" />  
-            <img src={s13} alt="gt" />        
-            <img src={s1} alt="html" />
-            <img src={s2} alt="css" />
-            <img src={s3} alt="js" />
-            <img src={s4} alt="tailwind" />
-            <img src={s5} alt="react" />
-            <img src={s6} alt="ts" />
-            <img src={s7} alt="next" />
-            <img src={s8} alt="node" />
-            <img src={s9} alt="express" />
-            <img src={s10} alt="mysql" />
-            <img src={s11} alt="mongodb" />
-            <img src={s12} alt="git" />  
-            <img src={s13} alt="gt" />           
-            </div>
-        </div>
+      <div className="skills">
+        {duplicatedSkills.map((skill, index) => (
+          <img key={index} src={skill.src} alt={skill.alt} />
+        ))}
+      </div>
+    </div>
             <p className="mt-8 text-xl">
               <span className="text-muted-foreground">I'm a </span>
               <span className="font-medium text-primary">

@@ -11,7 +11,7 @@ import s9 from "@/assets/express.jpg";
 import s10 from "@/assets/mysql.jpg";
 import s11 from "@/assets/mongo.png";
 import s12 from "@/assets/git.png";
-import s13 from "@/assets/github.png";
+import s13 from "@/assets/supabase.jpg";
 import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-2.jpg";
 import p2 from "@/assets/project-4.jpg";
@@ -80,7 +80,7 @@ export default function Index() {
   { src: s10, alt: "mysql" },
   { src: s11, alt: "mongodb" },
   { src: s12, alt: "git" },
-  { src: s13, alt: "gt" },
+  { src: s13, alt: "supabase" },
 ];
 const duplicatedSkills = [...skills, ...skills];
   return (

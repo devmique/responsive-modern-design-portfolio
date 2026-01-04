@@ -140,8 +140,10 @@ const duplicatedSkills = [...skills, ...skills];
           <p className="text-muted-foreground mt-2">Selected case studies and experiments.</p>
         </header>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-          {[{img:p1,title:"Parents Portal Management System", desc: "Tech stack: React.js, Node.js, Express.js, MySQL", glink:"https://github.com/devmique/full-stack-parents-portal", llink:""},{img:p2,title:" Student Violation Tracking System", desc: "Tech stack: React.js, TypeScript, TailwindCSS, Shadcn-UI, Node.js+Express, MongoDB", glink:"https://github.com/devmique/student_violation_tracking_system", llink:""},{img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "Tech stack: Next.js, Firebase, Tailwind CSS, Vapi AI, Shadcn-UI, Google Gemini, Zod", glink:"https://github.com/devmique/ai-mock-interview", llink:"https://ai-mock-interview-chi-nine.vercel.app"},{img:p4,title:"SaaS Workspace Dashboard", desc: "Tech stack: Next.js, TailwindCSS, Supabase, Shadcn-UI, Recharts", glink:"https://github.com/devmique/saas-workspace-dashboard/", llink:"https://saas-workspace-dashboard.vercel.app/"}].map((p, i) => (
+          {[{img:p1,title:"Parents Portal Management System", desc: "A full-stack school management platform designed to connect schools and parents. It provides an easy way for parents to stay updated with their child’s academic life while giving administrators powerful tools to manage attendance, grades, events, and communication.", glink:"https://github.com/devmique/full-stack-parents-portal", llink:"", tech:["React.js", "Node.js", "Express.js", "MySQL"]},
+          {img:p2,title:" Student Violation Tracking System", desc: "A full-stack web application for managing and monitoring student violations. The system allows administrators to record and view student violations while providing a detailed profile for each student.", glink:"https://github.com/devmique/student_violation_tracking_system", llink:"", tech: ["React.js", "TypeScript", "TailwindCSS", "Shadcn-UI", "Node.js", "Express.js", "MongoDB"]},
+          {img:p3,title:"AInterview: A Job Interview Preparation Platform ", desc: "A job interview preparation platform powered by Vapi AI Voice Agents and Google Gemini. It is designed to help job seekers practice real-time AI-driven interviews and get instant feedback.", glink:"https://github.com/devmique/ai-mock-interview", llink:"https://ai-mock-interview-chi-nine.vercel.app", tech:["Next.js", "Firebase", "Tailwind CSS", "Vapi AI", "Shadcn-UI", "Google Gemini", "Zod"]},
+          {img:p4,title:"SaaS Workspace Dashboard", desc: "A complete SaaS application that showcases production-ready patterns including Row Level Security, Server Actions, optimistic UI updates, real-time activity tracking, and multi-tenancy.", glink:"https://github.com/devmique/saas-workspace-dashboard/", llink:"https://saas-workspace-dashboard.vercel.app/", tech: ["Next.js", "TailwindCSS", "Supabase", "Shadcn-UI", "Recharts"]}].map((p, i) => (
 
             <Card key={i} className="overflow-hidden transition-transform hover:scale-[1.02]">
               <CardContent className="p-0">
@@ -149,6 +151,11 @@ const duplicatedSkills = [...skills, ...skills];
                 <div className="p-4">
                   <h3 className="font-medium">{p.title}</h3>
                   <p className="text-sm text-muted-foreground mt-1">{p.desc}</p>
+                  <div className="mt-1 flex flex-wrap justify-center items-center gap-2">
+                  {p.tech?.map((value, i)=>(
+                  <span key={i} className="text-muted-foreground px-2 py-1 text-xs bg-secondary rounded-lg">{value}</span>
+                  ))}
+                  </div>
                   <br></br>
                   <div className="flex justify-center items-center gap-2">
                   <a href={p.glink}><Button variant="outline" className="text-muted-foreground"><Github/>Github Repo</Button></a>

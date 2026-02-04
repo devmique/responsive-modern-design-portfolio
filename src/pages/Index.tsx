@@ -69,20 +69,20 @@ export default function Index() {
     setTimeout(() => setSending(false), 800);
   };
   const skills = [
-  { src: s1, alt: "html" },
-  { src: s2, alt: "css" },
-  { src: s3, alt: "js" },
-  { src: s4, alt: "tailwind" },
-  { src: s5, alt: "react" },
-  { src: s6, alt: "ts" },
-  { src: s7, alt: "next" },
-  { src: s8, alt: "node" },
-  { src: s9, alt: "express" },
-  { src: s10, alt: "mysql" },
-  { src: s11, alt: "mongodb" },
-  { src: s12, alt: "git" },
-  { src: s13, alt: "supabase" },
-  {src: s14, alt: "docker" }
+  { src: s1, alt: "html", name: "HTML" },
+  { src: s2, alt: "css", name: "CSS" },
+  { src: s3, alt: "js", name: "JavaScript" },
+  { src: s4, alt: "tailwind", name: "Tailwind CSS" },
+  { src: s5, alt: "react", name: "React" },
+  { src: s6, alt: "ts", name: "TypeScript" },
+  { src: s7, alt: "next", name: "Next.js" },
+  { src: s8, alt: "node", name: "Node.js" },
+  { src: s9, alt: "express", name: "Express" },
+  { src: s10, alt: "mysql", name: "MySQL" },
+  { src: s11, alt: "mongodb", name: "MongoDB" },
+  { src: s12, alt: "git", name: "Git" },
+  { src: s13, alt: "supabase", name: "Supabase" },
+  { src: s14, alt: "docker", name: "Docker" }
 ];
 const duplicatedSkills = [...skills, ...skills];
   return (
@@ -141,9 +141,18 @@ const duplicatedSkills = [...skills, ...skills];
             <br></br>
             <div className="skills-wrapper">
       <div className="skills">
-        {duplicatedSkills.map((skill, index) => (
-          <img key={index} src={skill.src} alt={skill.alt} />
-        ))}
+         {duplicatedSkills.map((skill, index) => (
+                <div key={index} className="relative group inline-block">
+                  <img 
+                    src={skill.src} 
+                    alt={skill.alt}
+                    className="transition-transform"
+                  />
+                  <span className="absolute left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs font-medium text-white bg-gray-900 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                    {skill.name}
+                  </span>
+                </div>
+              ))}
       </div>
     </div>
             <p className="mt-8 text-xl">

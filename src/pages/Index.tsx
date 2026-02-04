@@ -91,17 +91,46 @@ const duplicatedSkills = [...skills, ...skills];
       <Section id="about" className="pt-24">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
 
-        <div className="relative mx-auto w-56 h-56 md:w-72 md:h-72">
-            <div className="absolute -inset-6 rounded-full bg-primary/10 blur-2xl" aria-hidden></div>
-            <img
-              src={profileImg}
-              alt="Portrait of the UI/UX designer"
-              loading="lazy"
-              className="relative rounded-full object-cover w-full h-full shadow-xl animate-float"
-            />
-            <span className="absolute right-4 bottom-5 h-5 w-5 rounded-full bg-green-500 ring-4 ring-background" aria-label="Active"></span>
+           <div 
+            className="relative mx-auto w-56 h-56 md:w-72 md:h-72"
+            style={{ perspective: "1000px" }}
+            onMouseMove={(e) => {
+              const rect = e.currentTarget.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+              
+              const centerX = rect.width / 2;
+              const centerY = rect.height / 2;
+              
+              const rotateX = ((y - centerY) / centerY) * -10;
+              const rotateY = ((x - centerX) / centerX) * 10;
+              
+              const inner = e.currentTarget.querySelector('.tilt-inner') as HTMLElement;
+              if (inner) {
+                inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+              }
+            }}
+            onMouseLeave={(e) => {
+              const inner = e.currentTarget.querySelector('.tilt-inner') as HTMLElement;
+              if (inner) {
+                inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+              }
+            }}
+          >
+            <div 
+              className="tilt-inner relative w-full h-full transition-transform duration-200 ease-out"
+              style={{ transformStyle: "preserve-3d" }}
+            >
+              <div className="absolute -inset-6 rounded-full bg-primary/10 blur-2xl" aria-hidden></div>
+              <img
+                src={profileImg}
+                alt="Portrait of the UI/UX designer"
+                loading="lazy"
+                className="relative rounded-full object-cover w-full h-full shadow-xl animate-float"
+              />
+              <span className="absolute right-4 bottom-5 h-5 w-5 rounded-full bg-green-500 ring-4 ring-background" aria-label="Active"></span>
+            </div>
           </div>
-
           <div className="text-left">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
              Hi, I'm Johnlord Mique

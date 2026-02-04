@@ -21,7 +21,7 @@ A responsive, mobile-first portfolio website built with modern design principles
 ## 🧩 Sections Breakdown
 
 ### 👤 About Section
-- Floating profile image with subtle up-down animation and active status indicator
+- Floating profile image with subtle up-down animation, 3d tilt hover effect and active status indicator
 - Clean short bio using **typing animation** that loops through titles like `UI/UX Designer`, `Frontend Developer`, `Design Thinker`
 - Typography focuses on **readability and visual elegance**
 

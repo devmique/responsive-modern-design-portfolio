@@ -12,6 +12,7 @@ import s10 from "@/assets/mysql.jpg";
 import s11 from "@/assets/mongo.png";
 import s12 from "@/assets/git.png";
 import s13 from "@/assets/supabase.jpg";
+import s14 from "@/assets/docker.png";
 import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-2.jpg";
 import p2 from "@/assets/project-4.jpg";
@@ -30,7 +31,7 @@ import c11 from "@/assets/cert11.jpg";
 import c12 from "@/assets/cert12.png";
 import c13 from "@/assets/cert13.png";
 import c14 from "@/assets/cert14.png";
-import resume from "@/assets/resume.pdf"
+import resume from "@/assets/Johnlord_Mique_resume(2).pdf";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -81,6 +82,7 @@ export default function Index() {
   { src: s11, alt: "mongodb" },
   { src: s12, alt: "git" },
   { src: s13, alt: "supabase" },
+  {src: s14, alt: "docker" }
 ];
 const duplicatedSkills = [...skills, ...skills];
   return (

@@ -42,6 +42,7 @@ import { Mail, Linkedin, Github, SquareArrowOutUpRightIcon, Download } from "luc
 import { FormEvent, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import "@/App.css";
+import { LoadingScreen } from "@/components/LoadingScreen";
 const Section = ({ id, children, className = "" }: { id: string; children: React.ReactNode; className?: string }) => {
   const { ref, inView } = useInView<HTMLDivElement>();
   return (
@@ -86,6 +87,8 @@ export default function Index() {
 ];
 const duplicatedSkills = [...skills, ...skills];
   return (
+    <>
+    <LoadingScreen/>
     <main>
       {/* Hero / About */}
       <Section id="about" className="pt-24">
@@ -248,5 +251,6 @@ const duplicatedSkills = [...skills, ...skills];
         </div>
       </footer>
     </main>
+    </>
   );
 }

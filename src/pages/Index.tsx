@@ -31,7 +31,7 @@ import c11 from "@/assets/cert11.jpg";
 import c12 from "@/assets/cert12.png";
 import c13 from "@/assets/cert13.png";
 import c14 from "@/assets/cert14.png";
-import resume from "@/assets/Johnlord_Mique_resume(2).pdf";
+import resume from "@/assets/Johnlord_Mique_resume (2).pdf";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";

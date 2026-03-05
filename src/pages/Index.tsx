@@ -32,6 +32,7 @@ import c12 from "@/assets/certificates/cert12.png";
 import c13 from "@/assets/certificates/cert13.png";
 import c14 from "@/assets/certificates/cert14.png";
 import c15 from "@/assets/certificates/cert15.jpg";
+import c16 from "@/assets/certificates/cert16.jpg";
 import resume from "@/assets/Johnlord_Mique_resume (2).pdf";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -219,7 +220,7 @@ const duplicatedSkills = [...skills, ...skills];
           <p className="text-muted-foreground mt-2">Highlights from ongoing learning.</p>
         </header>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center cursor-pointer">
-          {[c2,c3,c4, c5, c6, c7, c8, c9, c10, c15, c12,c13, c14, c11, c1].map((src, i) => (
+          {[c2,c3,c4, c5, c6, c7, c8, c9, c10, c16, c15, c12,c13, c14, c11, c1].map((src, i) => (
             <div key={i} className="flex items-center justify-center rounded-xl border-2 border-gray-100 hover:border-gray-800 bg-card p-1 animate-fade-in dark:border-gray-800 dark:hover:border-gray-100">
               <img src={src} alt={`Certification badge ${i+1}`} className="h-21 w-21 " loading="lazy" />
             </div>

@@ -89,6 +89,8 @@ npm run dev
 
 If you'd like to get in touch, feel free to [reach out via the contact form](#contact-section) or email me directly.
 
+If you're interested to clone this repo, the backend folder is separated: [portfolio-email-backend](https://github.com/devmique/portfolio-email-backend)
+
 ---
 
 ## 🌟 Credits

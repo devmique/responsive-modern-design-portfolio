@@ -45,6 +45,8 @@ import { FormEvent, useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import "@/App.css";
 import { LoadingScreen } from "@/components/LoadingScreen";
+import CertificateAlbum from "@/components/CertificateAlbum";
+import { certificateAlbums } from "@/data/certificates";
 const Section = ({ id, children, className = "" }: { id: string; children: React.ReactNode; className?: string }) => {
   const { ref, inView } = useInView<HTMLDivElement>();
   return (
@@ -56,6 +58,19 @@ const Section = ({ id, children, className = "" }: { id: string; children: React
 
 export default function Index() {
   const [sending, setSending] = useState(false);
+
+
+  const [openAlbumId, setOpenAlbumId] = useState<string | null>(null);
+ 
+  // Toggle certificate album open/close
+const handleToggle = (albumId: string) => {
+  setOpenAlbumId((prev) => (prev === albumId ? null : albumId));
+};
+ 
+const totalCerts = certificateAlbums.reduce(
+  (sum, a) => sum + a.certificates.length,
+  0
+);
 
   /* Email submission */
  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -239,18 +254,28 @@ const duplicatedSkills = [...skills, ...skills];
 
       {/* Certifications */}
       <Section id="certifications">
-        <header className="mb-8">
-          <h2 className="text-3xl font-semibold tracking-tight">Certifications</h2>
-          <p className="text-muted-foreground mt-2">Highlights from ongoing learning.</p>
-        </header>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center cursor-pointer">
-          {[c2,c3,c4, c5, c6, c7, c8, c9, c10, c16, c15, c12,c13, c14, c11, c1].map((src, i) => (
-            <div key={i} className="flex items-center justify-center rounded-xl border-2 border-gray-100 hover:border-gray-800 bg-card p-1 animate-fade-in dark:border-gray-800 dark:hover:border-gray-100">
-              <img src={src} alt={`Certification badge ${i+1}`} className="h-21 w-21 " loading="lazy" />
-            </div>
-          ))}
-        </div>
-      </Section>
+  <header className="mb-8">
+    <div className="flex items-center gap-2 mb-1">
+      
+      <h2 className="text-3xl font-semibold tracking-tight">Certifications</h2>
+    </div>
+    <p className="text-muted-foreground mt-2">
+      {totalCerts} certificates across {certificateAlbums.length} platforms —
+      highlights from ongoing learning.
+    </p>
+  </header>
+ 
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+    {certificateAlbums.map((album) => (
+      <CertificateAlbum
+        key={album.id}
+        album={album}
+        isOpen={openAlbumId === album.id}
+        onToggle={() => handleToggle(album.id)}
+      />
+    ))}
+  </div>
+</Section>
 
       {/* Contact */}
       <Section id="contact" >

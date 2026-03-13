@@ -17,22 +17,6 @@ import p1 from "@/assets/projects/project-1.jpg";
 import p3 from "@/assets/projects/project-2.jpg";
 import p2 from "@/assets/projects/project-4.jpg";
 import p4 from "@/assets/projects/project-5.jpg";
-import c1 from "@/assets/certificates/cert1.jpg";
-import c2 from "@/assets/certificates/cert2.jpg";
-import c3 from "@/assets/certificates/cert3.jpg";
-import c4 from "@/assets/certificates/cert4.jpg";
-import c5 from "@/assets/certificates/cert5.jpg";
-import c6 from "@/assets/certificates/cert6.jpg";
-import c7 from "@/assets/certificates/cert7.jpg";
-import c8 from "@/assets/certificates/cert8.jpg";
-import c9 from "@/assets/certificates/cert9.jpg";
-import c10 from "@/assets/certificates/cert10.jpg";
-import c11 from "@/assets/certificates/cert11.jpg";
-import c12 from "@/assets/certificates/cert12.png";
-import c13 from "@/assets/certificates/cert13.png";
-import c14 from "@/assets/certificates/cert14.png";
-import c15 from "@/assets/certificates/cert15.jpg";
-import c16 from "@/assets/certificates/cert16.jpg";
 import resume from "@/assets/Johnlord_Mique_resume.pdf";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -47,6 +31,7 @@ import "@/App.css";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import CertificateAlbum from "@/components/CertificateAlbum";
 import { certificateAlbums } from "@/data/certificates";
+
 const Section = ({ id, children, className = "" }: { id: string; children: React.ReactNode; className?: string }) => {
   const { ref, inView } = useInView<HTMLDivElement>();
   return (
@@ -255,10 +240,7 @@ const duplicatedSkills = [...skills, ...skills];
       {/* Certifications */}
       <Section id="certifications">
   <header className="mb-8">
-    <div className="flex items-center gap-2 mb-1">
-      
       <h2 className="text-3xl font-semibold tracking-tight">Certifications</h2>
-    </div>
     <p className="text-muted-foreground mt-2">
       {totalCerts} certificates across {certificateAlbums.length} platforms —
       highlights from ongoing learning.

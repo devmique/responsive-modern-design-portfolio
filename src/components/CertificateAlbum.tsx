@@ -21,7 +21,7 @@ const CertificateAlbum = ({ album, isOpen, onToggle }: Props) => {
         aria-expanded={isOpen}
       >
         {/* Stacked layers behind */}
-        {stackImages.map((cert, i) => (
+        {!isOpen && stackImages.map((cert, i) => (
           <div
             key={cert.id}
             className="absolute inset-0 rounded-xl bg-card border border-border overflow-hidden"

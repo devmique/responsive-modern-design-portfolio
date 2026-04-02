@@ -1,14 +1,17 @@
 import { useRef, useState, useCallback } from "react";
+import gallery0 from"@/assets/gallery/tech7.jpg"
 import gallery1 from "@/assets/gallery/tech2.jpeg"
 import gallery2 from"@/assets/gallery/tech6.jpeg"
 import gallery3 from"@/assets/gallery/tech4.jpeg"
 import gallery4 from"@/assets/gallery/tech5.jpeg"
 
 const galleryItems = [
+  { src: gallery0, caption: "" },
   { src: gallery1, caption: "" },
   { src: gallery2, caption: "" },
   { src: gallery3, caption: "" },
   { src: gallery4, caption: "" },
+ 
 ];
 
 const Gallery = () => {

@@ -31,6 +31,7 @@ import "@/App.css";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import CertificateAlbum from "@/components/CertificateAlbum";
 import { certificateAlbums } from "@/data/certificates";
+import Gallery from "@/components/Gallery";
 
 const Section = ({ id, children, className = "" }: { id: string; children: React.ReactNode; className?: string }) => {
   const { ref, inView } = useInView<HTMLDivElement>();
@@ -258,6 +259,11 @@ const duplicatedSkills = [...skills, ...skills];
     ))}
   </div>
 </Section>
+
+      {/* Gallery */}
+      <Section id="gallery">
+        <Gallery />
+      </Section>
 
       {/* Contact */}
       <Section id="contact" >

@@ -13,6 +13,7 @@ import s11 from "@/assets/skills/mongo.png";
 import s12 from "@/assets/skills/git.png";
 import s13 from "@/assets/skills/supabase.jpg";
 import s14 from "@/assets/skills/docker.png";
+import s15 from "@/assets/skills/postgre.png"
 import p1 from "@/assets/projects/project-1.jpg";
 import p3 from "@/assets/projects/project-2.jpg";
 import p2 from "@/assets/projects/project-4.jpg";
@@ -108,6 +109,7 @@ const totalCerts = certificateAlbums.reduce(
   { src: s9, alt: "express", name: "Express" },
   { src: s10, alt: "mysql", name: "MySQL" },
   { src: s11, alt: "mongodb", name: "MongoDB" },
+  { src: s15, alt: "postgre", name: "PostgreSQL" },
   { src: s12, alt: "git", name: "Git" },
   { src: s13, alt: "supabase", name: "Supabase" },
   { src: s14, alt: "docker", name: "Docker" }

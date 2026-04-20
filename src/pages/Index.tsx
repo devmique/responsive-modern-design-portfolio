@@ -18,6 +18,7 @@ import p1 from "@/assets/projects/project-1.jpg";
 import p3 from "@/assets/projects/project-2.jpg";
 import p2 from "@/assets/projects/project-4.jpg";
 import p4 from "@/assets/projects/project-5.jpg";
+import p5 from "@/assets/projects/project-6.jpg";
 import resume from "@/assets/Johnlord_Mique_resume.pdf";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -215,7 +216,8 @@ const duplicatedSkills = [...skills, ...skills];
           {[{img:p1,title:"Parents Portal Management System", desc: "A full-stack school management platform designed to connect schools and parents. It provides an easy way for parents to stay updated with their child’s academic life while giving administrators powerful tools to manage attendance, grades, class schedule, events, and direct communication with parents.", glink:"https://github.com/devmique/full-stack-parents-portal", llink:"", tech:["React.js", "Node.js", "Express.js", "Redis", "MySQL"]},
           {img:p2,title:" Student Violation Tracking System", desc: "A full-stack web application for managing and monitoring student violations. The system allows administrators to record and view student violations while providing a detailed profile for each student.", glink:"https://github.com/devmique/student_violation_tracking_system", llink:"", tech: ["React.js", "TypeScript", "TailwindCSS", "Shadcn-UI", "Node.js", "Express.js", "MongoDB"]},
           {img:p3,title:"AInterview — A Job Interview Preparation Platform ", desc: "A job interview preparation platform powered by Vapi AI Voice Agents and Google Gemini. It is designed to help job seekers practice real-time AI-driven interviews and get instant feedback.", glink:"https://github.com/devmique/ai-mock-interview", llink:"https://ai-mock-interview-chi-nine.vercel.app", tech:["Next.js", "Firebase", "Tailwind CSS", "Vapi AI", "Shadcn-UI", "Google Gemini", "Zod"]},
-          {img:p4,title:"WorkspaceOS — A SaaS Workspace Dashboard", desc: "A complete SaaS application that showcases production-ready patterns including Row Level Security, Server Actions, optimistic UI updates, real-time activity tracking, and multi-tenancy.", glink:"https://github.com/devmique/saas-workspace-dashboard/", llink:"https://saas-workspace-dashboard.vercel.app/", tech: ["Next.js", "TailwindCSS", "Supabase", "Shadcn-UI", "Recharts"]}].map((p, i) => (
+          {img:p4,title:"WorkspaceOS — A SaaS Workspace Dashboard", desc: "A SaaS application that showcases production-ready patterns including Row Level Security, Server Actions, optimistic UI updates, real-time activity tracking, and multi-tenancy.", glink:"https://github.com/devmique/saas-workspace-dashboard/", llink:"https://saas-workspace-dashboard.vercel.app/", tech: ["Next.js", "TailwindCSS", "Supabase", "Shadcn-UI", "Recharts"]}, 
+          {img:p5,title:"TranSync PH — B2B SaaS Bus Operator Management System ", desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter live map for terminal locations, routes and schedule information.", glink:"https://github.com/devmique/b2b-saas-bus-operator-management-system", llink:"", tech:["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Leaflet", "Zod"]}].map((p, i) => (
 
             <Card key={i} className="overflow-hidden transition-transform hover:scale-[1.02]">
               <CardContent className="p-0">

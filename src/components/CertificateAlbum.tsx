@@ -35,6 +35,7 @@ const CertificateAlbum = ({ album, isOpen, onToggle }: Props) => {
               src={cert.image}
               alt=""
               className="w-full h-full object-cover opacity-40"
+              loading="lazy"
             />
           </div>
         ))}
@@ -98,6 +99,7 @@ const CertificateAlbum = ({ album, isOpen, onToggle }: Props) => {
                     <img
                       src={cert.image}
                       alt={cert.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover/cert:scale-105 transition-transform duration-300"
                     />
                   </div>

@@ -252,7 +252,7 @@ export default function Index() {
                       <span className="
                         absolute left-1/2 -translate-x-1/2 mb-3 z-50
                         px-2.5 py-1 text-xs font-semibold text-white
-                        bg-gray-800 rounded-lg whitespace-nowrap pointer-events-none
+                        bg-gray-800 rounded-sm whitespace-nowrap pointer-events-none
                         opacity-0 group-hover:opacity-100 transition-opacity
                         after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2
                         after:border-[5px] after:border-transparent after:border-b-gray-800

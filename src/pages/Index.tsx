@@ -84,7 +84,7 @@ const projects: Project[] = [
     desc: "A job interview preparation platform powered by Vapi AI Voice Agents and Google Gemini. It is designed to help job seekers practice real-time AI-driven interviews and get instant feedback.",
     glink: "https://github.com/devmique/ai-mock-interview",
     llink: "https://ai-mock-interview-chi-nine.vercel.app",
-    tech: ["Next.js", "Firebase", "Tailwind CSS", "Vapi AI", "Shadcn-UI", "Google Gemini", "Zod"],
+    tech: ["Next.js", "Firebase", "Tailwind CSS", "Vapi AI", "Shadcn-UI", "Google Gemini", "Zod", "Vercel"],
   },
   {
     imgSrc: p4,
@@ -92,15 +92,15 @@ const projects: Project[] = [
     desc: "A SaaS application that showcases production-ready patterns including Row Level Security, Server Actions, optimistic UI updates, and multi-tenancy with activity tracking.",
     glink: "https://github.com/devmique/saas-workspace-dashboard/",
     llink: "https://saas-workspace-dashboard.vercel.app/",
-    tech: ["Next.js", "TailwindCSS", "Supabase", "Shadcn-UI", "Recharts"],
+    tech: ["Next.js", "TailwindCSS", "Supabase", "Shadcn-UI", "Recharts", "Vercel"],
   },
   {
     imgSrc: p5,
     title: "TranSync PH — B2B SaaS Bus Operator Management System",
-    desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter live map for terminal locations, routes and schedule information.",
+    desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter map for terminal locations, live trip locations, and routes schedule information.",
     glink: "https://github.com/devmique/b2b-saas-bus-operator-management-system",
     llink: "https://transyncph.vercel.app/",
-    tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Leaflet", "Zod"],
+    tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Leaflet", "Zod", "Vercel", "Render"],
   },
 ];
 

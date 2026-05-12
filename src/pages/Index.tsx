@@ -97,7 +97,7 @@ const projects: Project[] = [
   {
     imgSrc: p5,
     title: "TranSync PH — B2B SaaS Bus Operator Management System",
-    desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter map for terminal locations, live trip locations, and routes schedule information.",
+    desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter map for terminal locations, live trip locations, and routes with schedule information.",
     glink: "https://github.com/devmique/b2b-saas-bus-operator-management-system",
     llink: "https://transyncph.vercel.app/",
     tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Leaflet", "Zod", "Vercel", "Render"],

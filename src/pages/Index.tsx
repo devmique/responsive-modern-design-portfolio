@@ -63,28 +63,28 @@ const skills = [
 
 const projects: Project[] = [
   {
-    imgSrc: p1,
-    title: "Parents Portal Management System",
-    desc: "A full-stack school management platform designed to connect schools and parents. It provides an easy way for parents to stay updated with their child's academic life while giving administrators powerful tools to manage attendance, grades, class schedule, events, and direct communication with parents.",
-    glink: "https://github.com/devmique/full-stack-parents-portal",
-    llink: "",
-    tech: ["React.js", "Node.js", "Express.js", "Redis", "MySQL"],
+    imgSrc: p5,
+    title: "TranSync PH — B2B SaaS Bus Operator Management System",
+    desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter map for terminal locations, live trip locations, and routes with schedule information.",
+    glink: "https://github.com/devmique/b2b-saas-bus-operator-management-system",
+    llink: "https://transyncph.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Leaflet", "Zod", "Vercel", "Render"],
   },
-  {
-    imgSrc: p2,
-    title: "Student Violation Tracking System",
-    desc: "A full-stack web application for managing and monitoring student violations. The system allows administrators to record and view student violations while providing a detailed profile for each student.",
-    glink: "https://github.com/devmique/student_violation_tracking_system",
-    llink: "",
-    tech: ["React.js", "TypeScript", "TailwindCSS", "Shadcn-UI", "Node.js", "Express.js", "MongoDB"],
-  },
-  {
+   {
     imgSrc: p3,
     title: "AInterview — A Job Interview Preparation Platform",
     desc: "A job interview preparation platform powered by Vapi AI Voice Agents and Google Gemini. It is designed to help job seekers practice real-time AI-driven interviews and get instant feedback.",
     glink: "https://github.com/devmique/ai-mock-interview",
     llink: "https://ai-mock-interview-chi-nine.vercel.app",
     tech: ["Next.js", "Firebase", "Tailwind CSS", "Vapi AI", "Shadcn-UI", "Google Gemini", "Zod", "Vercel"],
+  },
+  {
+    imgSrc: p1,
+    title: "Parents Portal Management System",
+    desc: "A full-stack school management platform designed to connect schools and parents. It provides an easy way for parents to stay updated with their child's academic life while giving administrators powerful tools to manage attendance, grades, class schedule, events, and direct communication with parents.",
+    glink: "https://github.com/devmique/full-stack-parents-portal",
+    llink: "",
+    tech: ["React.js", "Node.js", "Express.js", "Redis", "MySQL", "Google Gemini"],
   },
   {
     imgSrc: p4,
@@ -95,13 +95,14 @@ const projects: Project[] = [
     tech: ["Next.js", "TailwindCSS", "Supabase", "Shadcn-UI", "Recharts", "Vercel"],
   },
   {
-    imgSrc: p5,
-    title: "TranSync PH — B2B SaaS Bus Operator Management System",
-    desc: "A B2B SaaS platform for Philippine bus operators to manage routes, schedules, and terminals — with a public-facing commuter map for terminal locations, live trip locations, and routes with schedule information.",
-    glink: "https://github.com/devmique/b2b-saas-bus-operator-management-system",
-    llink: "https://transyncph.vercel.app/",
-    tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Leaflet", "Zod", "Vercel", "Render"],
+    imgSrc: p2,
+    title: "Student Violation Tracking System",
+    desc: "A full-stack web application for managing and monitoring student violations. The system allows administrators to record and view student violations while providing a detailed profile for each student.",
+    glink: "https://github.com/devmique/student_violation_tracking_system",
+    llink: "",
+    tech: ["React.js", "TypeScript", "TailwindCSS", "Shadcn-UI", "Node.js", "Express.js", "MongoDB"],
   },
+  
 ];
 
 // ─── Section wrapper ──────────────────────────────────────────────────────────
